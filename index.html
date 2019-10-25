@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
         <link rel="stylesheet" href="{{ 'assets/css/markdown-images.css' | relative_url }}" />
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     
     <body>
@@ -28,6 +28,24 @@
             <main>
                 New website comeing soon.
             </main>
+            <section>
+                    <form name="contact" method="POST" data-netlify="true">
+                            <p>
+                              <label>Your Name: <input type="text" name="name" /></label>   
+                            </p>
+                            <p>
+                              <label>Your Email: <input type="email" name="email" /></label>
+                            </p>
+                    
+                            <p>
+                              <label>Message: <textarea name="message"></textarea></label>
+                            </p>
+                            <p>
+                              <button type="submit">Send</button>
+                            </p>
+                          </form>
+                          
+            </section>
         <!-- Scripts -->
         <script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
         <script src="{{ 'assets/js/browser.min.js' | relative_url }}"></script>
