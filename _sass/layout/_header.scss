@@ -11,7 +11,10 @@
 		right: 2em;
 		top: 2em;
 		z-index: _misc(z-index-base);
-
+		img{
+			margin: auto;
+			max-width: 300px;
+		}
 		ul {
 			@include vendor('display', 'flex');
 			@include vendor('align-items', 'center');
